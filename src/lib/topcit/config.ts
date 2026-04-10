@@ -1,0 +1,45 @@
+// TOPCIT Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM076",
+  slug: "topcit",
+  name: "TOPCIT",
+  fullName: "Test of Practical Competency in IT",
+  alias: "Test of Practical Competency in IT",
+  family: "TOPCIT",
+  category: "Professional",
+  subcategory: "IT employability",
+  country: "South Korea",
+  region: "East Asia",
+  languages: ["Korean"],
+  estimatedAnnualTakers: "varies",
+  testingWindow: "May/Oct",
+  schedulePattern: "2 cycles/year",
+  ageGroup: "20-30",
+  targetUser: "University student/job seeker",
+  delivery: "Computer-based",
+  questionTypes: ["MCQ + performance"],
+  adaptivity: "Linear",
+  sections: "Software, DB, networking, biz",
+  scoringMode: "Scaled",
+  essayOrSpeaking: "No",
+  ipRisk: "Low",
+  contentReuse: "technical_aptitude",
+  uiEngine: "computer_objective",
+  monetizationPotential: "Medium",
+  tier: "Tier 5",
+  launchWave: "Wave 7",
+  themeColor: "#7C3AED",
+  themeColorDark: "#6D28D9",
+  localizationComplexity: "Low",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "ko",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
